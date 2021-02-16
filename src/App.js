@@ -2,6 +2,7 @@ import classes from "./App.module.css";
 import logo from "./img/logo.png";
 import heart from "./img/heart.png";
 import comment from "./img/comment.png";
+import Comment from "./Comment/Comment";
 
 //150220212008
 
@@ -48,8 +49,8 @@ function App() {
         <div>  <img src={heart}/> <p>131</p></div>
         <div> <img src={comment} /> <p>14</p></div>
       </div>
-      <div className={classes.Comment}></div>
-      <div className={classes.InputButon}></div>
+      <Comment/>
+      <div className={classes.InputArea}></div>
     </div>
   );
 }
