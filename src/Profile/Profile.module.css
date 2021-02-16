@@ -1,48 +1,71 @@
 .wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
 
 }
 .avatar {
-    height:125px;
-    width: 125px;
-    border-radius: 50%;
-    background-image: url(../img/logo.png);
-   
+  width: 176px;
+  height: 169px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.avatar img {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
 }
 .name {
-    margin-left:10px;
+  width: 146px;
+  height: 20px;
+  margin-top: 21px;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
-.proffesion{
-    margin-left:10px;
-    font-family: Arial;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 20px;
-margin-top:-15px;
-color: #808080;
+.proffesion {
+  width: 135px;
+  height: 20px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #808080;
+  margin-top: -15px;
+  margin-left: 10px;
 }
-.info{
-    background: #FFFBC8;
-border: 1px solid #DADADA;
-box-sizing: border-box;
-border-radius: 5px;
-margin-top: -10px;
-font-family: Arial;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 20px;
-padding-left:60px;
-margin-left:-50px;
-color: #333333;
+.info {
+  background: #fffbc8;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 10px;
 }
-
+.info p {
+  width: 333px;
+  height: 33px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 540px) {
+  .avatar,
+  .name,
+  .proffesion,
+  .info,
+  .info p {
+    width: 100%;
+  }
+}

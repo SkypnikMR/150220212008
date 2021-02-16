@@ -3,8 +3,9 @@
   display: flex;
   justify-content: center;  
   flex-direction:column;
-  max-width: 1024px;
+  width: 489px;
   margin:0 auto;
+  border:solid;
 }
  .info3 img{
   background: #DADADA;
@@ -15,5 +16,8 @@
   flex-direction: rows;
   justify-content:flex-start;
  } 
-
-
+ @media screen and (max-width: 540px) {
+      .wrapper{
+        width: 100%;
+      }
+  }

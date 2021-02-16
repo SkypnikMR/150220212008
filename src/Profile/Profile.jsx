@@ -18,7 +18,7 @@ const Profile = (props) => {
                 </p>
             </div>
         </div>
-        <div className={classes.avatar}/>
+        <div className={classes.avatar}> <img src={logo}/></div>
         
     </div>
 }

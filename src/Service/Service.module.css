@@ -1,12 +1,87 @@
-.wrapper{
-    display: flex;
-    justify-content: flex-end;
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
-.content{
-    margin-right:100px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width:680px;
-  }
-  
+.content {
+  width: 338px;
+}
+.services1 {
+  width: 276px;
+}
+.services1Text {
+  height: 16px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -15px;
+}
+.services2 {
+  width: 270px;
+}
+.services2Content {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 26px;
+}
+.services2Content span {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+.services2ContentBlock1 {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  padding-bottom: 3px;
+}
+.services2ContentBlock2 {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  padding-bottom: 3px;
+}
+.services2ContentBlock3 {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  padding-bottom: 3px;
+}
+.green {
+  width: 219px;
+  height: 24px;
+  background: #b1e19b;
+  border-radius: 0px 3px 3px 0px;
+}
+.blueLong {
+  width: 100px;
+  height: 24px;
+  background: #ace2f8;
+  border-radius: 0px 3px 3px 0px;
+}
+.blueShirt {
+  width: 50px;
+  height: 24px;
+  background: #ace2f8;
+  border-radius: 0px 3px 3px 0px;
+}
+.all {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+}
