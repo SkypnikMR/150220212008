@@ -19,25 +19,25 @@ function App() {
     { id: 3, person: 'Лилия Семеновна', date: "14 октября 2011", title: "Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?"  },
   ];
   const [state, setState] = React.useState(initialState);
-  /* let addToDo = (title) => {
+   let addComment = (text) => {
     setState(
       state.concat([
         {
           id: 1,
-          person: 'Аноним'
-          date: 'сегодня'
-          title: title
+          person: 'Аноним',
+          date: 'сегодня',
+          title: text
         },
       ])
     );
-  }; */
+  }; 
   return (
     <div className={classes.wrapper}>
       <Profile />
       <Service />
       <ReviewInfo />
       <Comments state={state} />
-      <NewComment/>
+      <NewComment addComment={addComment}/>
     </div>
   );
 }

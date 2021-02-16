@@ -1,12 +1,27 @@
 import classes from './NewComment.module.css'
+import React from 'react'
 
 
-const NewComment = (props) => {
+const NewComment = ({ addComment }) => {
+    const [value, setValue] = React.useState('')
+    let submitHandler = (event) => {
+        let e = event || e;
+        event.preventDefault()
+        if(value !== ''){
+            addComment(value)
+            setValue('')
+        }
+        else return 0;
+    }
     return (
-    <div className={classes.wrapper}>
-        <div className={classes.textArea}><textarea></textarea></div>
-        <div className={classes.button}><button>Написать консультанту</button></div>
-    </div>
+        <form onSubmit={submitHandler} className={classes.wrapper}>
+        <div className={classes.textInput}> <input 
+        type="text" 
+        value={value}
+        onChange={event => setValue(event.target.value)}
+        /></div>
+        <div className={classes.button}><button type="submit">Написать консультанту</button></div>
+    </form>
     )
 }
 
