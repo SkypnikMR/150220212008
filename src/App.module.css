@@ -3,30 +3,8 @@
   display: flex;
   justify-content: center;  
   flex-direction:column;
-  max-width: 60%;
+  max-width: 1024px;
   margin:0 auto;
-
-}
-.first {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-}
-.profileInfo {
-  padding: 1em;
-}
-.profileInfo h1 {
-  margin-top: -10px;
-}
-.profileInfo h3 {
-  color: rgb(151, 146, 146);
-  margin-top: -15px;
-}
-.profileInfo p {
-  background: #fffbc8;
-  border: 1px solid #dadada;
-  box-sizing: border-box;
-  border-radius: 5px;
 }
 .info2{
   padding:2em;
@@ -37,7 +15,7 @@
  .services3, .services4, .services5{
    display: flex;
    justify-content:flex-end;
-   width: 30%;
+   width: 100%;
    align-items: center;
  }
  .services2, .services3, 
@@ -52,6 +30,9 @@
   padding-top:10px;
   padding-bottom: 10px;
   padding-left:10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
  }
  .blueLong{
    background-color: #ACE2F8;
