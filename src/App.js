@@ -2,35 +2,15 @@ import classes from "./App.module.css";
 import heart from "./img/heart.png";
 import comment from "./img/comment.png";
 import Comment from "./Comment/Comment";
-import Profile from './Profile/Profile';
-
+import Profile from "./Profile/Profile";
+import Service from './Service/Service';
 //150220212008
 
 function App() {
   return (
     <div className={classes.wrapper}>
-      <Profile/>
-      <div className={classes.info2}>
-        <div className={classes.services1}>
-          <p>Услуг</p>
-        </div>
-        <div className={classes.services2}>
-          <p className={classes.green}>Ручное бронирование</p>
-          <p>11</p>
-        </div>
-        <div className={classes.services3}>
-          <p className={classes.blueLong}>Пакетные туры</p>
-          <p>3</p>
-        </div>
-        <div className={classes.services4}>
-          <p className={classes.blueShirt}>Отели</p>
-          <p>1</p>
-        </div>
-        <div className={classes.services5}>
-          <p className={classes.all}>Всего</p>
-          <p className={classes.all}>15</p>
-        </div>
-      </div>
+      <Profile />
+      <Service />
       <div className={classes.info3}>
         <div>
           <h3>Последние отзывы</h3>
