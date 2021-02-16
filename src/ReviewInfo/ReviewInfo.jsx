@@ -5,7 +5,6 @@ import comment from '../img/comment.svg'
 
 const ReviewInfo = (props) => {
     return (
-
         <div className={classes.wrapper}>
             <div className={classes.first}>
                 <p>Последние отзывы</p>
