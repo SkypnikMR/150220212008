@@ -3,10 +3,10 @@
   justify-content: flex-end;
 }
 .content {
-  width: 338px;
+  width: 74%;
 }
 .services1 {
-  width: 270px;
+  width: 100%;
 }
 .services1Text {
   height: 16px;
@@ -21,7 +21,7 @@
   margin-top: -15px;
 }
 .services2 {
-  width: 270px;
+  width: 100%;
 }
 .services2Content {
   display: flex;
@@ -85,7 +85,7 @@
 .all {
   display: flex;
   justify-content: space-between;
-  width: 270px;
+  width: 100%;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -98,4 +98,17 @@
 }
 .numbers p{
     margin-top: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    padding-top:10px;
+    display: flex;
+    justify-content: center;
+  }
+  .content{
+    width:90%;
+    margin:0 auto;
+  }
+  .services1, .services2, .all { width: 100%}
 }

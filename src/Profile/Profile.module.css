@@ -48,10 +48,11 @@
   box-sizing: border-box;
   border-radius: 5px;
   padding-left: 10px;
+  height:100%;
 }
 .info p {
-  width: 333px;
-  height: 33px;
+
+  width: 100%;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -60,12 +61,14 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 540px) {
-  .avatar,
-  .name,
-  .proffesion,
-  .info,
-  .info p {
+@media screen and (max-width: 425px) {
+  .wrapper{
+    width: 90%;
+    margin:0 auto;
+    justify-content: center;
+  }
+  .info{
     width: 100%;
   }
+    
 }
