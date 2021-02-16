@@ -1,0 +1,49 @@
+.wrapper {
+  width: 100%;
+  height: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.textArea {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 5px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding:20px;
+}
+.textArea textarea {
+  width: 100%;
+  height: 63px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 1px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  padding-left:10px;
+  padding-top:10px;
+}
+.button button {
+  width:50%;
+  height: 43px;
+  background: #fdd639;
+  border-radius: 25px;
+  font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+
+}
+.button button:focus{
+    border-radius: 0px;
+}

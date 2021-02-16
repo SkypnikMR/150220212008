@@ -2,7 +2,6 @@ import classes from './ReviewInfo.module.css'
 import like from '../img/like.svg'
 import comment from '../img/comment.svg'
 
-
 const ReviewInfo = (props) => {
     return (
         <div className={classes.wrapper}>

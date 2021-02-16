@@ -3,7 +3,6 @@ import logo from "../img/logo.png";
 
 const Profile = (props) => {
     return <div className={classes.wrapper}>
-    
         <div className={classes.profileInfo}>
             <div className={classes.name}>
                 <p>Вероника Ростова</p>
@@ -18,8 +17,8 @@ const Profile = (props) => {
                 </p>
             </div>
         </div>
-        <div className={classes.avatar}> <img src={logo}/></div>
-        
+        <div className={classes.avatar}> <img src={logo} /></div>
+
     </div>
 }
 export default Profile;

@@ -1,30 +1,32 @@
+import React from "react";
 import classes from "./App.module.css";
 import Comments from "./Comments/Comments";
 import Profile from "./Profile/Profile";
 import Service from "./Service/Service";
 import ReviewInfo from "./ReviewInfo/ReviewInfo";
-import React from "react";
-//150220212008
+import NewComment from "./NewComment/NewComment";
+
 
 function App() {
   const initialState = [
     {
       id: 1,
-      person: 'Лилия Семеновна', date: "13 октября 2011",
+      person: 'Самуил', date: "13 октября 2011",
       title:
-        "Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?",
+        "Привет, Верунь! ниче себе ты крутая. фотка класс!!!! ",
     },
-    { id: 2, person: 'Лилия Семеновна', date: "13 октября 2011", title: "text1" },
-    { id: 3, person: 'Лилия Семеновна', date: "13 октября 2011", title: "text1"  },
+    { id: 2, person: 'Лилия Семеновна', date: "14 октября 2011", title: "Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?" },
+    { id: 3, person: 'Лилия Семеновна', date: "14 октября 2011", title: "Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?"  },
   ];
-  const [state, setTodos] = React.useState(initialState);
+  const [state, setState] = React.useState(initialState);
   /* let addToDo = (title) => {
-    setTodos(
-      todos.concat([
+    setState(
+      state.concat([
         {
-          title: title,
-          id: Date.now(),
-          completed: false,
+          id: 1,
+          person: 'Аноним'
+          date: 'сегодня'
+          title: title
         },
       ])
     );
@@ -35,7 +37,7 @@ function App() {
       <Service />
       <ReviewInfo />
       <Comments state={state} />
-      <div className={classes.InputArea}></div>
+      <NewComment/>
     </div>
   );
 }
