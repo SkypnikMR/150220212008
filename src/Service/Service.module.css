@@ -6,7 +6,7 @@
   width: 338px;
 }
 .services1 {
-  width: 276px;
+  width: 270px;
 }
 .services1Text {
   height: 16px;
@@ -31,6 +31,10 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 26px;
+  margin-top:15px;
+  padding-bottom: 20px;
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
 }
 .services2Content span {
   font-family: Arial;
@@ -43,25 +47,28 @@
   display: flex;
   justify-content: space-between;
   height: 24px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+  margin-top:20px;
 }
 .services2ContentBlock2 {
   display: flex;
   justify-content: space-between;
   height: 24px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+
 }
 .services2ContentBlock3 {
   display: flex;
   justify-content: space-between;
   height: 24px;
-  padding-bottom: 3px;
+
 }
 .green {
   width: 219px;
-  height: 24px;
+  height: 24px; 
   background: #b1e19b;
   border-radius: 0px 3px 3px 0px;
+
 }
 .blueLong {
   width: 100px;
@@ -84,4 +91,11 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 26px;
+}
+.green p, .blueShirt p, .blueLong p{
+    margin-top: 0;
+    margin-left: 2px;
+}
+.numbers p{
+    margin-top: 0;
 }

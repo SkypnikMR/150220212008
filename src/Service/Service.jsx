@@ -12,9 +12,19 @@ const Service = (props) => {
                 <div className={classes.services2}>
 
                     <div className={classes.services2Content}>
-                        <div className={classes.services2ContentBlock1}><p className={classes.green}>Ручное бронирование</p><p><span>11</span></p></div>
-                        <div className={classes.services2ContentBlock2}><p className={classes.blueLong}>Пакетные туры</p><p><span>3</span></p></div>
-                        <div className={classes.services2ContentBlock3}><p className={classes.blueShirt}>Отель</p><p><span>1</span></p></div>
+                        <div className={classes.services2ContentBlock1}>
+                            <div className={classes.green}><p>Ручное бронирование</p></div>
+                            <div className={classes.numbers}><p>11</p></div>
+                        </div>
+                        <div className={classes.services2ContentBlock2}>
+                            <div className={classes.blueLong}><p>Пакетные туры</p></div>
+                            <div className={classes.numbers}><p>3</p></div>
+                        </div>
+                        <div className={classes.services2ContentBlock3}>
+                            <div className={classes.blueShirt}><p>Отели</p></div>
+                            <div className={classes.numbers}><p>1</p></div>
+                        </div>
+                      
                     </div>
                 </div>
                 <div className={classes.all}><p>Всего</p><p>15</p></div>
