@@ -1,5 +1,6 @@
 .wrapper {
-  width: 100%;
+  width:90%;
+  margin:0 auto;
   height: 191px;
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@
   align-content: center;
 }
 .textInput {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -16,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  padding:20px;
+  padding: 20px;
 }
 .textInput input {
   width: 100%;
@@ -29,27 +31,37 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 20px;
-  padding-left:10px;
+  padding-left: 10px;
 }
+.textInput input:focus {
+  outline: none;
+}
+
 .button button {
-  width:50%;
+  width: 50%;
   height: 43px;
-  background: #fdd639;
-  border-radius: 25px;
+  background-color: #fdd639;
+  border: 1px solid #fdd639;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-
+  border-radius: 25px;
 }
-.button button:focus{
-    border-radius: 0px;
+.button button:focus {
+  outline:none;
 }
 
+@media screen and (max-width: 540px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 425px) {
-    .wrapper{
-      width:90%;
-      margin: 0 auto;
-    }
+  .button button {
+    line-height: 15px;
+  }
 }
+

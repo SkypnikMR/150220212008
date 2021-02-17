@@ -15,11 +15,9 @@ const NewComment = ({ addComment }) => {
     }
     return (
         <form onSubmit={submitHandler} className={classes.wrapper}>
-            <div className={classes.textInput}> <input
-                type="text"
-                value={value}
-                onChange={event => setValue(event.target.value)}
-            /></div>
+            <div className={classes.textInput}>
+                <input type="text"value={value} onChange={event => setValue(event.target.value)} />
+            </div>
             <div className={classes.button}><button type="submit">Написать консультанту</button></div>
         </form>
     )

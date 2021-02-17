@@ -1,9 +1,9 @@
 .wrapper {
+  width:90%;
+  margin:0 auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row-reverse;
-
 }
 .avatar {
   width: 176px;
@@ -11,6 +11,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+}
+.profileInfo{
+  z-index: 1;
+  margin-left:-60px;
+
 }
 .avatar img {
   width: 124px;
@@ -20,7 +26,6 @@
 .name {
   width: 146px;
   height: 20px;
-  margin-top: 21px;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -28,7 +33,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 70px;
 }
 .proffesion {
   width: 135px;
@@ -40,19 +45,20 @@
   line-height: 20px;
   color: #808080;
   margin-top: -15px;
-  margin-left: 10px;
+  margin-left: 70px;
 }
 .info {
   background: #fffbc8;
   border: 1px solid #dadada;
   box-sizing: border-box;
   border-radius: 5px;
-  padding-left: 10px;
-  height:100%;
+  padding-left: 70px;
+  display: flex;
+  justify-self: flex-end;
+
 }
 .info p {
 
-  width: 100%;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -61,7 +67,7 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
   .wrapper{
     width: 90%;
     margin:0 auto;
@@ -69,6 +75,18 @@
   }
   .info{
     width: 100%;
+  }   
+}
+@media screen and (max-width: 374px) {
+  .wrapper{
+    width: 90%;
+    margin:0 auto;
+    justify-content: center;
   }
-    
+  .info{
+   height: 100px;
+  }
+  .avatar img{
+    margin-top:15px;
+  }
 }
