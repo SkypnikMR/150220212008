@@ -10,7 +10,6 @@ const Service = (props) => {
                     <div className={classes.services1Text}><p>Услуг</p></div>
                 </div>
                 <div className={classes.services2}>
-
                     <div className={classes.services2Content}>
                         <div className={classes.services2ContentBlock1}>
                             <div className={classes.green}><p>Ручное бронирование</p></div>
@@ -24,7 +23,6 @@ const Service = (props) => {
                             <div className={classes.blueShirt}><p>Отели</p></div>
                             <div className={classes.numbers}><p>1</p></div>
                         </div>
-                      
                     </div>
                 </div>
                 <div className={classes.all}><p>Всего</p><p>15</p></div>

@@ -1,6 +1,6 @@
 .wrapper {
-  width:90%;
-  margin:0 auto;
+  width: 90%;
+  margin: 0 auto;
   height: 191px;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,6 @@
 .textInput input:focus {
   outline: none;
 }
-
 .button button {
   width: 50%;
   height: 43px;
@@ -50,9 +49,8 @@
   border-radius: 25px;
 }
 .button button:focus {
-  outline:none;
+  outline: none;
 }
-
 @media screen and (max-width: 540px) {
   .wrapper {
     width: 90%;
@@ -64,4 +62,3 @@
     line-height: 15px;
   }
 }
-

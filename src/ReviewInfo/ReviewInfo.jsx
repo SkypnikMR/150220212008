@@ -12,10 +12,10 @@ const ReviewInfo = (props) => {
                 <a href="#">Все отзывы</a>
             </div>
             <div className={classes.third}>
-                <img src={like}/><p>131</p>
+                <img src={like} /><p>131</p>
             </div>
             <div className={classes.four}>
-            <img src={comment}/><p>14</p>
+                <img src={comment} /><p>14</p>
             </div>
         </div>
     )

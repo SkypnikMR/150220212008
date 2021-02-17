@@ -1,7 +1,6 @@
 import classes from './NewComment.module.css'
 import React from 'react'
 
-
 const NewComment = ({ addComment }) => {
     const [value, setValue] = React.useState('')
     let submitHandler = (event) => {
@@ -11,7 +10,6 @@ const NewComment = ({ addComment }) => {
             setValue('')
         }
         else return 0;
-
     }
     return (
         <form onSubmit={submitHandler} className={classes.wrapper}>

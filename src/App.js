@@ -29,10 +29,10 @@ function App() {
         "Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?",
     },
   ];
-  const [state, setState] = React.useState(initialState);
+  const [comment, setState] = React.useState(initialState);
   let addComment = (text) => {
     setState(
-      state.concat([
+      comment.concat([
         {
           id: 1,
           person: "Аноним",
@@ -47,7 +47,7 @@ function App() {
       <Profile />
       <Service />
       <ReviewInfo />
-      <Comments state={state} />
+      <Comments comment={comment} />
       <div className={classes.footer}>
         <NewComment addComment={addComment} />
       </div>

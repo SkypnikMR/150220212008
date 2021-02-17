@@ -1,6 +1,6 @@
 .wrapper {
-  width:90%;
-  margin:0 auto;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -13,10 +13,9 @@
   justify-content: center;
   z-index: 2;
 }
-.profileInfo{
+.profileInfo {
   z-index: 1;
-  margin-left:-60px;
-
+  margin-left: -60px;
 }
 .avatar img {
   width: 124px;
@@ -55,10 +54,8 @@
   padding-left: 70px;
   display: flex;
   justify-self: flex-end;
-
 }
 .info p {
-
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -68,25 +65,25 @@
   align-items: center;
 }
 @media screen and (max-width: 540px) {
-  .wrapper{
+  .wrapper {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: center;
   }
-  .info{
+  .info {
     width: 100%;
-  }   
+  }
 }
 @media screen and (max-width: 374px) {
-  .wrapper{
+  .wrapper {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: center;
   }
-  .info{
-   height: 100px;
+  .info {
+    height: 100px;
   }
-  .avatar img{
-    margin-top:15px;
+  .avatar img {
+    margin-top: 15px;
   }
 }
